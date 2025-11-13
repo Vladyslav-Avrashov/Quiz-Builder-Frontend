@@ -1,0 +1,141 @@
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.headerButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.headerButtons .button {
+  width: 100%;
+}
+
+.backButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+.backButton:hover {
+  color: #212529;
+}
+.backButton svg {
+  width: 20px;
+  height: 20px;
+}
+.backButtonError {
+  margin-top: 1rem;
+  display: block;
+  color: #0d6efd;
+  text-decoration: none;
+}
+.backButtonError:hover {
+  text-decoration: underline;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin: 0;
+}
+
+.dateText {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.questionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.questionTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #212529;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.questionBody {
+  margin-top: 1rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #f8f9fa;
+}
+
+.optionsList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.optionsList li {
+  color: #495057;
+  line-height: 1.5;
+}
+
+.correctOption {
+  font-weight: 600;
+}
+.correctMark {
+  margin-left: 0.5rem;
+  color: #198754;
+  font-weight: 700;
+}
+
+.inputQuestionText {
+  font-size: 0.875rem;
+  color: #6c757d;
+  font-style: italic;
+  margin: 0;
+}
+
+.errorBox {
+  background-color: #fde8e8;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 1rem 1.25rem;
+  border-radius: 0.375rem;
+}
+
+@media (min-width: 640px) {
+  .headerButtons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headerButtons .button {
+    width: auto;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+  .pageTitle {
+    font-size: 1.875rem;
+  }
+  .questionsContainer {
+    gap: 1.5rem;
+  }
+}

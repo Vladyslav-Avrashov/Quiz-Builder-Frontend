@@ -1,0 +1,206 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.cardTitle {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 0.5rem;
+}
+
+.removeQuestionButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  cursor: pointer;
+}
+.removeQuestionButton svg {
+  width: 20px;
+  height: 20px;
+  color: #adb5bd;
+}
+.removeQuestionButton:hover svg {
+  color: #495057;
+}
+
+.questionForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inputLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 0.25rem;
+}
+
+.answersSection {
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.optionItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+.optionItem .form-input {
+  width: 100%;
+}
+
+.formRadio,
+.formCheckbox {
+  height: 1rem;
+  width: 1rem;
+  color: #0d6efd;
+  border-color: #adb5bd;
+}
+
+.formRadio {
+  border-radius: 9999px;
+  margin-top: 0.35rem;
+}
+
+.formCheckbox {
+  border-radius: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  align-self: flex-end;
+}
+.removeButton svg {
+  color: #adb5bd;
+}
+.removeButton:hover svg {
+  color: #495057;
+}
+
+.addOptionButton {
+  background: none;
+  border: none;
+  color: #0d6efd;
+  font-size: 0.875rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  align-self: flex-start;
+}
+.addOptionButton:hover {
+  color: #0b5ed7;
+}
+
+.radioGroup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.inputQuestionText {
+  font-size: 0.875rem;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid #e9ecef;
+  margin: 0;
+}
+
+.formActions {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1rem;
+}
+.formActions .button {
+  width: 100%;
+}
+
+.submitContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.errorBox {
+  background-color: #fde8e8;
+  color: #721c24;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.errorText {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .card {
+    padding: 1.5rem;
+  }
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+  .optionItem {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .formRadio,
+  .formCheckbox {
+    margin-top: 0;
+  }
+  .removeButton {
+    align-self: initial;
+  }
+  .formActions {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .formActions .button {
+    width: auto;
+  }
+  .submitContainer {
+    align-items: flex-end;
+  }
+}

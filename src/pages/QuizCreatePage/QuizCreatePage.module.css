@@ -1,0 +1,18 @@
+.pageContainer {
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #212529;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .pageTitle {
+    font-size: 1.875rem;
+  }
+}
